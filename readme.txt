@@ -24,4 +24,8 @@ another chapter and video about the consumer. Actually a whole application expla
 2.1.2020
 Switch	to pykafka
 
-updated requirements.txt (pykafka, date time)
+******************** to dos for the homework
+
+the consumer should get (and print) the producerID for each received message
+
+as in this example the messages are numbers, they should be sent as numbers (int) and not as strings.
