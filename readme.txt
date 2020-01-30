@@ -1,28 +1,16 @@
-****************** how i started and lost lots of time
-
-created conda environment A3kafka with python 3.7
-setup requirement.txt with the packages i need. defenitely python-kafka.
+****************** i am working on a mac.
 
 get kafka (and zookeeper included) as described here 
 http://kafka.apache.org/quickstart
--> works well with the cli , messages successfully send and received / produced and consumed
+-> works well (on mac) with the cli , messages successfully send and received / produced and consumed
 
-to run everything in a docker container, follow https://www.youtube.com/watch?v=U5PshJKECe4 (i have not done that yet)
-
-when running, first start zookeeper server , then kafka server.
-
-check out https://kafka-python.readthedocs.io/en/master/usage.html# for example code for producer and consumer
--> KafkaProducer(bootstrap_servers=['localhost:9092']) does not work with python 3.7 - have to use python 3.6
+I tried to work with kafka-python
+https://kafka-python.readthedocs.io/en/master/usage.html# for example code for producer and consumer
+but ran into troubles. Like it did not work with python 3.7 - you have to use python 3.6
+Still could not resolve this
 -> python 3.6 produces error: kafka.errors.NoBrokersAvailable: NoBrokersAvailable
 
-read about the kafka producer, with code examples and associated youtube video https://medium.com/@codeanddogs/kafka-producer-in-python-f481ae1e4c5d
-another chapter and video about the consumer. Actually a whole application explained from scratch. Uses pykafka.
-
-
-******************* this worked better for me (on Mac)
-
-2.1.2020
-Switch	to pykafka
+pykafka worked better for me. 
 
 ******************** to dos for the homework
 
