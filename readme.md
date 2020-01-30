@@ -4,7 +4,7 @@ I got kafka (and zookeeper included) as described here
 http://kafka.apache.org/quickstart
 It worked well (on my mac) with the cli , messages successfully send and received / produced and consumed
 
-Tried to work with kafka-python but ran into problems:
+Tried to work with the kafka-python library but ran into problems:
 Like it did not work with python 3.7 - I switched to python 3.6
 Still I could not resolve this error: kafka.errors.NoBrokersAvailable: NoBrokersAvailable
 
