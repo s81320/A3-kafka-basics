@@ -9,4 +9,4 @@ consumer = topic.get_simple_consumer()
 
 # DO SOMETHING
 for c in consumer:
-	print(c.offset , ' : ' , c.value)
+	print(c.offset , ' : ' , c.value.decode('utf-8'))
