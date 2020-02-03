@@ -14,6 +14,6 @@ producer = topic.get_sync_producer()
 i = 2
 while True:
 	producer.produce(str(i).encode('utf-8'))
-	i+= 2
+	i += 2
 	time.sleep(1)
 
