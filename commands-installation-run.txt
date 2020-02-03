@@ -1,0 +1,28 @@
+# this is how it works on my machine
+## should be the starting point for an automated deployment on a virtul box...
+
+# download from
+https://www-eu.apache.org/dist/kafka/2.4.0/kafka_2.12-2.4.0.tgz
+
+# open
+tar -xzf kafka_2.12-2.4.0.tgz
+
+# go there 
+ cd kafka_2.12-2.4.0
+
+# start zookeeper server
+/Applications/kafka_2.12-2.4.0/bin/zookeeper-server-start.sh /Applications/kafka_2.12-2.4.0/config/zookeeper.properties
+
+# start kafka server
+/Applications/kafka_2.12-2.4.0/bin/kafka-server-start.sh /Applications/kafka_2.12-2.4.0/config/server.properties
+
+# create topic
+/Applications/kafka_2.12-2.4.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic A3-homework
+
+# check
+/Applications/kafka_2.12-2.4.0/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+# start python programs for consumer and producer
+python A3-consumer.py
+python A3-producerA.py
+python A3-producerB.py
