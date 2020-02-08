@@ -22,3 +22,6 @@ The following image is from Michael G. Noll's talk at Berlin Buzzwords in 2016. 
 Kafka Streams is a Java library. When you want to do kafka streaming in Python use Spark.
 ## alpha go movie
 YES! watched it - liked it!
+
+## homework running on my laptop
+![image](./Screenshot-homework-A3-running.png)
